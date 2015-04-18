@@ -9,25 +9,6 @@
 	margin 0 auto
 	padding 1em 8.43em	
 	overflow hidden
-	&__navigation
-		float right
-		width 80%
-		&__dropdown
-			display none
-			.dropdown__select
-				border  0 !important  
-				-webkit-appearance  none  
-				-moz-appearance  none 
-				background  background_header_suave url('../img/select-arrow.png') no-repeat 90% center
-				width  100% 
-				text-indent  0.01px /* Removes default arrow from firefox*/
-				text-overflow  ""  /*Removes default arrow from firefox*/ /*My custom style for fonts*/
-				color  #FFF
-				border-radius  15px
-				padding  5px
-				box-shadow  inset 0 0 5px rgba(000,000,000, 0.5)
-				.active
-					background naranja
 	&__list
 		list-style-type none
 		text-align right
@@ -60,3 +41,74 @@
 				left 3em
 				bottom 0
 				top 0.6em
+	&__navigation
+		float right
+		width 80%
+		&__dropdown
+			display none
+			.dropdown__select
+				border  0 !important  
+				-webkit-appearance  none  
+				-moz-appearance  none 
+				background  background_header_suave url('../img/select-arrow.png') no-repeat 90% center
+				width  100% 
+				text-indent  0.01px /* Removes default arrow from firefox*/
+				text-overflow  ""  /*Removes default arrow from firefox*/ /*My custom style for fonts*/
+				color  #FFF
+				border-radius  15px
+				padding  5px
+				box-shadow  inset 0 0 5px rgba(000,000,000, 0.5)
+				.active
+					background naranja
+.sidebar
+	align-items center
+	background background_header_sidebar 
+	display flex
+	height 80vh
+	padding 1em 2.5em
+	margin 0 auto
+	&__container
+		width 90%
+		padding-left 3em
+		p
+			margin-top 3em
+		&__title
+		&__titleDescription
+			font-family 'Raleway', sans-serif
+			color gris
+		&__title
+			font-size 5em
+			font-weight 600
+		&__titleDescription
+			font-weight 200
+			padding .2em 0
+	&__left
+	&__right
+		opacity .5
+		width 5%
+		a
+			color background_header_sidebar_claro
+			
+.sidebar__triangle
+	background orange
+	display flex
+	height 1.5em
+	margin 0 auto
+	&__left
+	&__right
+		width 50%
+	&__left
+		background white
+	&__right
+		background background_header_sidebar
+		position relative
+		&:before
+			content ""
+			position absolute
+			border-left 1em solid transparent
+			border-right 1em solid transparent
+			border-bottom 1.5em solid white
+			border-top 1em solid transparent
+			bottom 0
+			left -1em
+	
