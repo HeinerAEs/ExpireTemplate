@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <title>Expire Template - By @HeinerAEs</title>
         <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         
         <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
         <link rel="stylesheet" href="css/main.css">
@@ -17,14 +17,29 @@
         <div class="container">
             <header class="header">
                 <div class="header__logo">
-                    <figure class="header__logo_image">
-                        <img src="img/logo.png" alt="Expire Template - By @HeinerAEs" width="100" height="100" title="Expire Template - By @HeinerAEs" />
-                        <figcaption>Expire</figcaption>
-                    </figure>
+                    <a href="#">
+                        <figure class="header__logo__image">
+                            <img src="img/logo.png" alt="Expire Template - By @HeinerAEs" width="50" height="50" title="Expire Template - By @HeinerAEs" />
+                            <figcaption>Expire</figcaption>
+                        </figure>
+                    </a>
                 </div>
+                <nav class="header__navigation__dropdown">
+                   <label class="dropdown__label">
+                       <select class="dropdown__select">
+                            <option value="#">Menu</option>
+                            <option value="#" class="active" selected>Home</option>
+                            <option value="#">Porfolio</option>
+                            <option value="#">Blog</option>
+                            <option value="#">Pages</option>
+                            <option value="#">About</option>
+                            <option value="#">Contact</option>
+                       </select>
+                   </label>
+                </nav>
                 <nav class="header__navigation">
                     <ul class="header__list">
-                        <li class="header__list__item"><a href="#">Home</a></li>
+                        <li class="header__list__item"><a href="#" class="active">Home</a></li>
                         <li class="header__list__item"><a href="#">Porfolio</a></li>
                         <li class="header__list__item"><a href="#">Blog</a></li>
                         <li class="header__list__item"><a href="#">Pages</a></li>

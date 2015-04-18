@@ -1,0 +1,62 @@
+.container
+	width 100%
+	max-width 1440px
+.header
+	background background_header
+	color gris
+	display flex
+	letter-spacing 0.05em
+	margin 0 auto
+	padding 1em 8.43em	
+	overflow hidden
+	&__navigation
+		float right
+		width 80%
+		&__dropdown
+			display none
+			.dropdown__select
+				border  0 !important  
+				-webkit-appearance  none  
+				-moz-appearance  none 
+				background  background_header_suave url('../img/select-arrow.png') no-repeat 90% center
+				width  100% 
+				text-indent  0.01px /* Removes default arrow from firefox*/
+				text-overflow  ""  /*Removes default arrow from firefox*/ /*My custom style for fonts*/
+				color  #FFF
+				border-radius  15px
+				padding  5px
+				box-shadow  inset 0 0 5px rgba(000,000,000, 0.5)
+				.active
+					background naranja
+	&__list
+		list-style-type none
+		text-align right
+		&__item
+			display inline-block
+			padding 0 1em
+			a
+				color gris
+				display block
+				line-height 60px
+				&.active
+					border-bottom 3px solid naranja
+				&:hover
+					border-bottom 3px solid naranja
+			&:first-child
+				padding-left 0
+			&:last-child
+				padding-right 0
+	&__logo
+		float left
+		width 20%
+		a
+			color gris
+		&__image
+			position relative
+			margin 0
+			figcaption
+				font-size 1.5em
+				position absolute
+				left 3em
+				bottom 0
+				top 0.6em
