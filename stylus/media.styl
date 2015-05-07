@@ -1,4 +1,20 @@
 @media screen and (max-width: 480px)
+	.about
+		padding 1em 1em	
+		&__description
+			display block
+			&__content
+				display block
+				margin 1em 0
+				width 100%
+				&__item
+					.btn
+						position relative
+				.triangles
+					&__center
+						border-left 2px solid gris_obscuro
+						transform skew(60deg)
+						transform-origin 0 0
 	.header
 		display block
 		padding 0
@@ -11,7 +27,24 @@
 			width 100%
 		&__navigation
 			display none
+			
 @media screen and (min-width: 481px) and (max-width: 950px)
+	.about
+		padding 1em 2em	
+		&__description
+			display block
+			&__content
+				display block
+				margin 1em 0
+				width 100%
+				&__item
+					.btn
+						position relative
+				.triangles
+					&__center
+						border-left 2px solid gris_obscuro
+						transform skew(70deg)
+						transform-origin 0 0
 	.header
 		padding .5em 1em
 		&__list

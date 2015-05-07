@@ -268,7 +268,7 @@ h6 {
   border-right: 1px solid #d5cdcd;
   border-bottom: 1px solid #d5cdcd;
   height: 100%;
-  padding: 0 1em;
+  padding: 0 1em 1em 1em;
   word-spacing: 0.3em;
 }
 .about__description__content__item .h5 {
@@ -300,26 +300,12 @@ h6 {
 .about__description__content:last-child {
   margin-right: 0;
 }
-.about__description__content .triangles {
-  display: flex;
-  height: 1.5em;
-}
-.about__description__content .triangles__center {
-  border-left: 1px solid #d5cdcd;
-  width: 10%;
-  transform: skew(45deg);
-  transform-origin: 0 0;
-}
-.about__description__content .triangles__left,
-.about__description__content .triangles__right {
-  width: 45%;
-}
-.about__description__content .triangles__left {
+.about__description__content .triangle__left {
   border-left: 1px solid #d5cdcd;
   border-top: 1px solid #d5cdcd;
 }
-.about__description__content .triangles__right {
-  border-bottom: 1px solid #d5cdcd;
+.about__description__content .triangle__right {
+  background: #d5cdcd;
 }
 .container {
   width: 100%;
@@ -470,6 +456,25 @@ h6 {
 }
 /* * Media Queries */
 @media screen and (max-width: 480px) {
+  .about {
+    padding: 1em 1em;
+  }
+  .about__description {
+    display: block;
+  }
+  .about__description__content {
+    display: block;
+    margin: 1em 0;
+    width: 100%;
+  }
+  .about__description__content__item .btn {
+    position: relative;
+  }
+  .about__description__content .triangles__center {
+    border-left: 2px solid #d5cdcd;
+    transform: skew(60deg);
+    transform-origin: 0 0;
+  }
   .header {
     display: block;
     padding: 0;
@@ -487,6 +492,25 @@ h6 {
   }
 }
 @media screen and (min-width: 481px) and (max-width: 950px) {
+  .about {
+    padding: 1em 2em;
+  }
+  .about__description {
+    display: block;
+  }
+  .about__description__content {
+    display: block;
+    margin: 1em 0;
+    width: 100%;
+  }
+  .about__description__content__item .btn {
+    position: relative;
+  }
+  .about__description__content .triangles__center {
+    border-left: 2px solid #d5cdcd;
+    transform: skew(70deg);
+    transform-origin: 0 0;
+  }
   .header {
     padding: 0.5em 1em;
   }
