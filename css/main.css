@@ -259,17 +259,29 @@ h6 {
 }
 .about__description__content {
   margin: 1em 1em 0 1em;
+  width: 100%;
+  position: relative;
 }
 .about__description__content__item {
+  color: #272727;
   border-left: 1px solid #d5cdcd;
   border-right: 1px solid #d5cdcd;
   border-bottom: 1px solid #d5cdcd;
+  height: 100%;
   padding: 0 1em;
-  position: relative;
   word-spacing: 0.3em;
 }
-.about__description__content__item h4 {
-  padding: 0.5em 1em;
+.about__description__content__item .h5 {
+  padding: 0.5em 0;
+}
+.about__description__content__item .h5 span {
+  color: #d5cdcd;
+  font-size: 2em;
+  margin-right: 0.5em;
+}
+.about__description__content__item p {
+  color: #5a5959;
+  font-size: 0.9em;
 }
 .about__description__content__item .btn {
   position: absolute;
@@ -282,11 +294,8 @@ h6 {
 }
 .about__description__content__item:first-child p {
   color: #5a5959;
-  font-size: 1.5em;
+  font-size: 1.7em;
   font-weight: 600;
-}
-.about__description__content:first-child {
-  width: 100%;
 }
 .about__description__content:last-child {
   margin-right: 0;
