@@ -573,6 +573,9 @@ h6 {
   .header__list__item {
     padding: 0 0.3em;
   }
+  .parallax {
+    padding: 1em 2em;
+  }
 }
 /* * Utilities */
 .background--orange {
