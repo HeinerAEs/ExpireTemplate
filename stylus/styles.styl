@@ -1,10 +1,11 @@
 .about
+.parallax
 .sidebar
-.sidebar__triangle
 	margin 0 auto
 	
 .about
 .header
+.parallax
 	padding 1em 8.43em	
 	
 .about
@@ -14,6 +15,8 @@
 			font-family 'Raleway', sans-serif
 			font-weight 700
 			position relative
+			text-shadow:  0px 3px 3px rgba(0, 0, 0, 0.25);
+			
 			span
 				border-bottom 2px solid naranja_obscuro
 				
@@ -95,6 +98,8 @@
 .container
 	width 100%
 	max-width 1440px
+	
+
 .header
 	background background_header
 	color gris
@@ -153,7 +158,56 @@
 				box-shadow  inset 0 0 5px rgba(000,000,000, 0.5)
 				.active
 					background naranja
-					
+
+
+.parallax
+	background-attachment fixed
+	background naranja_claro
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width 100%
+	text-align center
+	&__header
+		color white
+		.h1
+			font-family 'Raleway', sans-serif
+			margin 2rem 0
+			position relative
+			text-shadow:  0px 3px 3px rgba(0, 0, 0, 0.25);
+			&:before
+				border 1px solid white
+				content ""
+				margin-bottom -1rem
+				position absolute
+				left 45%
+				bottom 0
+				right 45%
+				text-align center
+				width 10%
+		p
+			color gris_obscuro
+			font-family 'Open Sans', sans-serif
+			font-size .8rem
+	&__quotes
+		font-family 'Open Sans', sans-serif
+		margin 3em 0
+		text-align left
+		&__author
+			&:before
+				content " - "
+		&__description
+			.fa
+				color gris
+				font-size 3rem
+				opacity .5
+		&__author
+		&__description
+			margin 1em
+			color gris_obscuro
+			font-size 1.5rem
+		
+
 .sidebar
 	&__container
 		align-items center
@@ -173,6 +227,7 @@
 		&__title
 			font-size 5em
 			font-weight 600
+			text-shadow:  0px 3px 3px rgba(0, 0, 0, 0.25);
 		&__titleDescription
 			font-weight 200
 			padding .2em 0
@@ -186,4 +241,3 @@
 
 	
 
-	

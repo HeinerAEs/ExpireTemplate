@@ -228,12 +228,13 @@ h6 {
 }
 /* * STYLES */
 .about,
-.sidebar,
-.sidebar__triangle {
+.parallax,
+.sidebar {
   margin: 0 auto;
 }
 .about,
-.header {
+.header,
+.parallax {
   padding: 1em 8.43em;
 }
 .about__title .h1 {
@@ -241,6 +242,7 @@ h6 {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   position: relative;
+  text-shadow: 0px 3px 3px rgba(0,0,0,0.25);
 }
 .about__title .h1 span {
   border-bottom: 2px solid #ca361f;
@@ -385,6 +387,59 @@ h6 {
 .header__navigation__dropdown .dropdown__select .active {
   background: #ff3c1f;
 }
+.parallax {
+  background-attachment: fixed;
+  background: #f0523a;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  text-align: center;
+}
+.parallax__header {
+  color: #fff;
+}
+.parallax__header .h1 {
+  font-family: 'Raleway', sans-serif;
+  margin: 2rem 0;
+  position: relative;
+  text-shadow: 0px 3px 3px rgba(0,0,0,0.25);
+}
+.parallax__header .h1:before {
+  border: 1px solid #fff;
+  content: "";
+  margin-bottom: -1rem;
+  position: absolute;
+  left: 45%;
+  bottom: 0;
+  right: 45%;
+  text-align: center;
+  width: 10%;
+}
+.parallax__header p {
+  color: #d5cdcd;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.8rem;
+}
+.parallax__quotes {
+  font-family: 'Open Sans', sans-serif;
+  margin: 3em 0;
+  text-align: left;
+}
+.parallax__quotes__author:before {
+  content: " - ";
+}
+.parallax__quotes__description .fa {
+  color: #fafafa;
+  font-size: 3rem;
+  opacity: 0.5;
+}
+.parallax__quotes__author,
+.parallax__quotes__description {
+  margin: 1em;
+  color: #d5cdcd;
+  font-size: 1.5rem;
+}
 .sidebar__container {
   align-items: center;
   background: #51555c;
@@ -407,6 +462,7 @@ h6 {
 .sidebar__center__title {
   font-size: 5em;
   font-weight: 600;
+  text-shadow: 0px 3px 3px rgba(0,0,0,0.25);
 }
 .sidebar__center__titleDescription {
   font-weight: 200;
@@ -573,4 +629,13 @@ h6 {
   border-top: 1em solid transparent;
   bottom: 0;
   left: -1em;
+}
+.triangle__parallax .triangle__left {
+  background: #f0523a;
+}
+.triangle__parallax .triangle__right {
+  background: #fff;
+}
+.triangle__parallax .triangle__right:before {
+  border-bottom: 1.5em solid #f0523a;
 }
