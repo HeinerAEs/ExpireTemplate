@@ -711,6 +711,17 @@ h6 {
   .header__navigation {
     display: none;
   }
+  .latest-blog__header {
+    margin: 0 1rem;
+  }
+  .latest-blog__container {
+    margin: 0;
+    padding: 0;
+  }
+  .latest-blog__center__item:nth-child(1),
+  .latest-blog__center__item:nth-child(2) {
+    display: none;
+  }
   .parallax,
   .stats {
     padding: 1em 2em;
@@ -751,12 +762,19 @@ h6 {
   .header__list__item {
     padding: 0 0.3em;
   }
-  .parallax {
+  .latest-blog__container {
+    margin: 0;
+    padding: 0;
+  }
+  .latest-blog__center__item:last-child {
+    display: none;
+  }
+  .parallax,
+  .stats {
     padding: 1em 2em;
   }
   .stats {
     display: block;
-    padding: 1em 2em;
     width: 100%;
   }
   .stats__item {

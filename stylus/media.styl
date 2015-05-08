@@ -27,6 +27,19 @@
 			width 100%
 		&__navigation
 			display none
+
+	.latest-blog
+		&__header
+			margin 0 1rem
+		&__container
+			margin 0
+			padding 0
+		&__center
+			&__item
+				&:nth-child(1)
+				&:nth-child(2)
+					display none
+			
 	
 	.parallax
 	.stats
@@ -62,12 +75,23 @@
 		&__list
 			&__item
 				padding 0 .3em
+
+	.latest-blog
+		&__container
+			margin 0
+			padding 0
+		&__center
+			&__item
+				&:last-child
+					display none
+			
+	
 	.parallax
+	.stats
 		padding 1em 2em	
 		
 	.stats
 		display block
-		padding 1em 2em	
 		width 100%
 		&__item
 			display inline-block
