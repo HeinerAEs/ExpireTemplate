@@ -234,7 +234,8 @@ h6 {
 }
 .about,
 .header,
-.parallax {
+.parallax,
+.stats {
   padding: 1em 8.43em;
 }
 .about__title .h1 {
@@ -476,6 +477,32 @@ h6 {
 .sidebar__left a,
 .sidebar__right a {
   color: #7d838e;
+}
+.stats {
+  background: #7d838e;
+  color: #fff;
+  display: flex;
+  font-family: 'Raleway', sans-serif;
+  justify-content: space-around;
+}
+.stats__item {
+  width: 25%;
+  margin: 2rem 0;
+}
+.stats__item p {
+  margin: 1rem 0;
+}
+.stats__item p:first-child {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.stats__item p:first-child span {
+  font-size: 3rem;
+  margin-right: 0.5rem;
+}
+.stats__item p:last-child {
+  font-size: 1.5rem;
+  font-weight: 200;
 }
 .btn {
   border: 0;
