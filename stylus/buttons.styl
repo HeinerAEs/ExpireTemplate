@@ -14,9 +14,20 @@
 		background naranja
 		&:hover
 			background naranja_obscuro
+	
+	&--orange_border
+		border 1px solid rgba(naranja_obscuro, .5)
+		box-shadow 1px 1px 1px rgba(naranja_obscuro, .5),
+				   1px 1px 2px rgba(naranja_obscuro, .5),
+				   1px 1px 3px rgba(naranja_obscuro, .5)
+		color naranja_obscuro
+		background white
+		&:hover
+			color white
+			background naranja_obscuro
 			
 		
-	&--orange-dark
+	&--orange_dark
 		box-shadow 1px 1px 1px rgba(naranja, .5),
 				   1px 1px 2px rgba(naranja, .5),
 				   1px 1px 3px rgba(naranja, .5),
@@ -39,3 +50,15 @@
 			background gris
 	&:active
 		box-shadow 0px 0px 0px rgba(naranja_obscuro, .5)
+	
+	&--white
+		box-shadow 1px 1px 1px rgba(gris_obscuro, .5),
+				   1px 1px 2px rgba(gris_obscuro, .5),
+				   1px 1px 3px rgba(gris_obscuro, .5),
+				   1px 1px 4px rgba(gris_obscuro, .5),
+				   1px 1px 5px rgba(gris_obscuro, .5)
+		color negro_claro
+		background white
+		&:hover
+			background gris_obscuro
+			
