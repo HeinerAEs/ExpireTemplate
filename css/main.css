@@ -573,6 +573,19 @@ h6 {
   .header__navigation {
     display: none;
   }
+  .parallax,
+  .stats {
+    padding: 1em 2em;
+  }
+  .stats {
+    display: block;
+    width: 100%;
+  }
+  .stats__item {
+    display: inline-block;
+    margin: 0.5em 0;
+    width: 48%;
+  }
 }
 @media screen and (min-width: 481px) and (max-width: 950px) {
   .about {
@@ -602,6 +615,16 @@ h6 {
   }
   .parallax {
     padding: 1em 2em;
+  }
+  .stats {
+    display: block;
+    padding: 1em 2em;
+    width: 100%;
+  }
+  .stats__item {
+    display: inline-block;
+    margin: 0.5em 0;
+    width: 48%;
   }
 }
 /* * Utilities */
