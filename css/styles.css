@@ -1,0 +1,254 @@
+.about,
+.parallax,
+.sidebar {
+  margin: 0 auto;
+}
+.about,
+.header,
+.parallax,
+.stats {
+  padding: 1em 8.43em;
+}
+.about__title .h1 {
+  color: negro;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  position: relative;
+  text-shadow: 0px 3px 3px rgba(0,0,0,0.25);
+}
+.about__title .h1 span {
+  border-bottom: 2px solid naranja_obscuro;
+}
+.about__title p {
+  color: negro_claro;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.8em;
+  font-weight: 400;
+  padding: 1em 0;
+}
+.about__description {
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  align-items: stretch;
+}
+.about__description__content {
+  margin: 1em 1em 0 1em;
+  width: 100%;
+  position: relative;
+}
+.about__description__content__item {
+  color: negro;
+  border-left: 1px solid gris_obscuro;
+  border-right: 1px solid gris_obscuro;
+  border-bottom: 1px solid gris_obscuro;
+  height: 100%;
+  padding: 0 1em 1em 1em;
+  word-spacing: 0.3em;
+}
+.about__description__content__item .h5 {
+  padding: 0.5em 0;
+}
+.about__description__content__item .h5 span {
+  color: gris_obscuro;
+  font-size: 2em;
+  margin-right: 0.5em;
+}
+.about__description__content__item p {
+  color: negro_claro;
+  font-size: 0.9em;
+}
+.about__description__content__item .btn {
+  position: absolute;
+  bottom: 0;
+}
+.about__description__content__item:first-child {
+  border: 0;
+  margin-left: 0;
+  padding: 0;
+}
+.about__description__content__item:first-child p {
+  color: negro_claro;
+  font-size: 1.7em;
+  font-weight: 600;
+}
+.about__description__content:last-child {
+  margin-right: 0;
+}
+.about__description__content .triangle__left {
+  border-left: 1px solid gris_obscuro;
+  border-top: 1px solid gris_obscuro;
+}
+.about__description__content .triangle__right {
+  background: gris_obscuro;
+}
+.container {
+  width: 100%;
+  max-width: 1440px;
+}
+.header {
+  background: background_header;
+  color: gris;
+  display: flex;
+  letter-spacing: 0.05em;
+  padding: 1em 8.43em;
+  overflow: hidden;
+}
+.header__list {
+  list-style-type: none;
+  text-align: right;
+}
+.header__list__item {
+  display: inline-block;
+  padding: 0 1em;
+}
+.header__list__item a {
+  color: gris;
+  display: block;
+  line-height: 60px;
+}
+.header__list__item a.active {
+  border-bottom: 3px solid naranja;
+}
+.header__list__item a:hover {
+  border-bottom: 3px solid naranja;
+}
+.header__list__item:first-child {
+  padding-left: 0;
+}
+.header__list__item:last-child {
+  padding-right: 0;
+}
+.header__logo {
+  float: left;
+  width: 20%;
+}
+.header__logo a {
+  color: gris;
+}
+.header__logo__image {
+  position: relative;
+  margin: 0;
+}
+.header__logo__image figcaption {
+  font-size: 1.5em;
+  position: absolute;
+  left: 3em;
+  bottom: 0;
+  top: 0.6em;
+}
+.header__navigation {
+  float: right;
+  width: 80%;
+}
+.header__navigation__dropdown {
+  display: none;
+}
+.header__navigation__dropdown .dropdown__select {
+  border: 0 !important;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: background_header_suave url("../img/select-arrow.png") no-repeat 90% center;
+  width: 100%;
+  text-indent: 0.01px;
+  text-overflow: "";
+  color: #fff;
+  border-radius: 15px;
+  padding: 5px;
+  box-shadow: inset 0 0 5px rgba(0,0,0,0.5);
+}
+.header__navigation__dropdown .dropdown__select .active {
+  background: naranja;
+}
+.parallax {
+  background-attachment: fixed;
+  background: naranja_claro;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  text-align: center;
+}
+.parallax__header {
+  color: #fff;
+}
+.parallax__header .h1 {
+  font-family: 'Raleway', sans-serif;
+  margin: 2rem 0;
+  position: relative;
+  text-shadow: 0px 3px 3px rgba(0,0,0,0.25);
+}
+.parallax__header .h1:before {
+  border: 1px solid #fff;
+  content: "";
+  margin-bottom: -1rem;
+  position: absolute;
+  left: 45%;
+  bottom: 0;
+  right: 45%;
+  text-align: center;
+  width: 10%;
+}
+.parallax__header p {
+  color: gris_obscuro;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.8rem;
+}
+.parallax__quotes {
+  font-family: 'Open Sans', sans-serif;
+  margin: 3em 0;
+  text-align: left;
+}
+.parallax__quotes__author:before {
+  content: " - ";
+}
+.parallax__quotes__description .fa {
+  color: gris;
+  font-size: 3rem;
+  opacity: 0.5;
+}
+.parallax__quotes__author,
+.parallax__quotes__description {
+  margin: 1em;
+  color: gris_obscuro;
+  font-size: 1.5rem;
+}
+.sidebar__container {
+  align-items: center;
+  background: background_header_sidebar;
+  display: flex;
+  height: 80vh;
+  padding: 1em 2.5em;
+}
+.sidebar__center {
+  width: 90%;
+  padding-left: 3em;
+}
+.sidebar__center p {
+  margin-top: 3em;
+}
+.sidebar__center__title,
+.sidebar__center__titleDescription {
+  font-family: 'Raleway', sans-serif;
+  color: gris;
+}
+.sidebar__center__title {
+  font-size: 5em;
+  font-weight: 600;
+  text-shadow: 0px 3px 3px rgba(0,0,0,0.25);
+}
+.sidebar__center__titleDescription {
+  font-weight: 200;
+  padding: 0.2em 0;
+}
+.sidebar__left,
+.sidebar__right {
+  opacity: 0.5;
+  width: 5%;
+}
+.sidebar__left a,
+.sidebar__right a {
+  color: background_header_sidebar_claro;
+}
+.stats {
+  background: background_header_sidebar_claro;
+}
