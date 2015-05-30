@@ -1,15 +1,19 @@
 .about
+.contact
 .parallax
 .sidebar
 	margin 0 auto
 	
 .about
+.contact
 .header
 .parallax
 .stats
 	padding 1em 8.43em	
 	
+
 .about
+.contact
 	&__title
 		.h1
 			color negro
@@ -27,6 +31,9 @@
 			font-size 0.8em
 			font-weight 400
 			padding 1em 0
+
+
+.about
 	&__description
 		font-family 'Open Sans', sans-serif
 		display flex
@@ -69,25 +76,6 @@
 						
 			&:last-child
 				margin-right 0
-				
-			// .triangles
-			// 	display flex
-			// 	height 1.5em
-				
-			// 	&__center
-			// 		border-left 1px solid gris_claro
-			// 		width 10%
-			// 		transform skew(45deg)
-			// 		transform-origin 0 0
-			// 	&__left
-			// 	&__right
-			// 		width 45%
-			// 	&__left
-			// 		border-left 1px solid gris_claro
-			// 		border-top 1px solid gris_claro
-			// 	&__right
-			// 		border-bottom 1px solid gris_claro
-				
 			.triangle
 				&__left
 					border-left 1px solid gris_claro
@@ -95,6 +83,51 @@
 				&__right
 					background gris_claro
 		
+
+.contact
+	border-bottom 1px solid gris_claro
+	&__container
+		display flex
+		margin-top 2em
+	&__description
+		display block
+		width 30%
+		&__item
+			color negro_claro
+			display flex
+			flex-wrap wrap
+			align-items center
+			margin 1rem
+			.fa
+				width 30%
+				font-size 3rem
+			&__data
+				width 70%
+				text-align left
+	&__form
+		width 70%
+		display flex
+		&__name
+		&__email
+		&__subject
+		&__message
+			color negro_claro
+			border none
+			box-shadow: -1px 3px 3px 1px rgba(gris_obscuro,0.75);
+			margin-bottom 1rem
+			padding 1em
+		&__name
+			float left
+			width 48%
+		&__email
+			float right
+			width 48%
+		&__subject
+			width 100%
+		&__message
+			width 100%
+			resize none
+
 
 .container
 	width 100%

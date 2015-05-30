@@ -418,27 +418,32 @@ h6 {
 }
 /* * STYLES */
 .about,
+.contact,
 .parallax,
 .sidebar {
   margin: 0 auto;
 }
 .about,
+.contact,
 .header,
 .parallax,
 .stats {
   padding: 1em 8.43em;
 }
-.about__title .h1 {
+.about__title .h1,
+.contact__title .h1 {
   color: #272727;
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   position: relative;
   text-shadow: 0px 3px 3px rgba(0,0,0,0.25);
 }
-.about__title .h1 span {
+.about__title .h1 span,
+.contact__title .h1 span {
   border-bottom: 2px solid #ca361f;
 }
-.about__title p {
+.about__title p,
+.contact__title p {
   color: #5a5959;
   font-family: 'Open Sans', sans-serif;
   font-size: 0.8em;
@@ -509,6 +514,87 @@ h6 {
 }
 .about__description__content .triangle__right {
   background: #d5cdcd;
+}
+.contact {
+  border-bottom: 1px solid #d5cdcd;
+}
+.contact__container {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  margin-top: 2em;
+}
+.contact__description {
+  display: block;
+  width: 30%;
+}
+.contact__description__item {
+  color: #5a5959;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  -o-box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  margin: 1rem;
+}
+.contact__description__item .fa {
+  width: 30%;
+  font-size: 3rem;
+}
+.contact__description__item__data {
+  width: 70%;
+  text-align: left;
+}
+.contact__form {
+  width: 70%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+}
+.contact__form__name,
+.contact__form__email,
+.contact__form__subject,
+.contact__form__message {
+  color: #5a5959;
+  border: none;
+  -webkit-box-shadow: -1px 3px 3px 1px rgba(145,136,136,0.75);
+  box-shadow: -1px 3px 3px 1px rgba(145,136,136,0.75);
+  margin-bottom: 1rem;
+  padding: 1em;
+}
+.contact__form__name {
+  float: left;
+  width: 48%;
+}
+.contact__form__email {
+  float: right;
+  width: 48%;
+}
+.contact__form__subject {
+  width: 100%;
+}
+.contact__form__message {
+  width: 100%;
+  resize: none;
 }
 .container {
   width: 100%;
