@@ -833,10 +833,12 @@ h6 {
   margin-top: -4px;
   width: 25%;
 }
+.portfolio__item__hover,
 .portfolio__item__figure {
   margin: 0;
   padding: 0;
 }
+.portfolio__item__hover img,
 .portfolio__item__figure img {
   width: 100%;
 }
