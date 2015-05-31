@@ -868,6 +868,11 @@ h6 {
   color: #d5cdcd;
   font-size: 1.5rem;
 }
+.maps__frame {
+  border: none;
+  height: 400px;
+  width: 100%;
+}
 .parallax {
   background-attachment: fixed;
   background: #f0523a;
