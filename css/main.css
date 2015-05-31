@@ -1139,6 +1139,28 @@ h6 {
   font-size: 1.5rem;
   font-weight: 200;
 }
+.up {
+  display: table;
+  text-align: center;
+  position: fixed;
+  bottom: 6rem;
+  right: 0;
+}
+.up a {
+  background: #272727;
+  color: #d5cdcd;
+  display: table-cell;
+  font-size: 1.5rem;
+  font-weight: 900;
+  height: 30px;
+  line-height: 30px;
+  vertical-align: middle;
+  width: 30px;
+}
+.up a:hover {
+  background: #d5cdcd;
+  color: #272727;
+}
 .btn {
   border: 0;
   font-weight: bold;
@@ -1332,6 +1354,10 @@ h6 {
 }
 .right {
   float: right;
+}
+.rounded {
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
 }
 .lowercase {
   text-transform: lowercase;
