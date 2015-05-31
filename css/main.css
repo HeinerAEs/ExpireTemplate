@@ -608,6 +608,67 @@ h6 {
   width: 100%;
   max-width: 1440px;
 }
+.footer {
+  background: #272727;
+  color: #d5cdcd;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -o-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  padding: 0 2rem;
+  text-align: center;
+}
+.footer__social,
+.footer__logo,
+.footer__copy {
+  color: #fff;
+  width: 33.3%;
+}
+.footer__social a,
+.footer__logo a,
+.footer__copy a {
+  color: #fff;
+}
+.footer__social a:hover,
+.footer__logo a:hover,
+.footer__copy a:hover {
+  color: #ca361f;
+}
+.footer__copy {
+  font-size: 0.8em;
+}
+.footer__social {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+}
+.footer__social a {
+  color: #fff;
+  display: block;
+  font-size: 1.2rem;
+  padding: 1rem;
+  width: 25%;
+}
+.footer__logo figcaption {
+  font-size: 1.5rem;
+}
 .header {
   background: #2e3844;
   color: #fff;
